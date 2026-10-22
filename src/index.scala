@@ -52,5 +52,5 @@ object WorkshopApp extends IOWebApp:
     Widget("Cph traffic light", "traffic", traffic),
     Widget("Exponentials", "exponentials", exponentials),
     Widget("Fibonacci", "fibonacci", fibonacci),
-    Widget("Lag Test", "lag-test", lagTest),
+    Widget("Lag Test", "lag-test", lagTest)
   )

@@ -16,7 +16,6 @@ object WorkshopApp extends IOWebApp:
 
   def render =
     Router(Window[IO]).toResource.flatMap { router =>
-
       def widgetUri(id: String) = uri"" +? ("widget" -> id)
 
       def nav = ul(widgets.toList.map { case Widget(name, id, _) =>
@@ -47,5 +46,5 @@ object WorkshopApp extends IOWebApp:
   case class Widget(name: String, id: String, content: Resource[IO, HtmlElement[IO]])
 
   def widgets = NonEmptyList.of(
-    Widget("Dorothy", "oz", oz),
+    Widget("Dorothy", "oz", oz)
   )

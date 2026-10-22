@@ -47,5 +47,6 @@ object WorkshopApp extends IOWebApp:
 
   def widgets = NonEmptyList.of(
     Widget("Dorothy", "oz", oz),
+    Widget("How fast can you overflow the Fibonacci number?", "thomas", fibonacciGame),
     Widget("Cph traffic light", "traffic", traffic)
   )

@@ -1,6 +1,7 @@
 //> using platform js
 //> using dep com.armanbilge::calico::0.2.3
 //> using dep com.armanbilge::calico-router::0.2.3
+//> using dep org.http4s::http4s-dom::0.2.12
 //> using jsModuleKind es
 
 import calico.*
@@ -49,5 +50,8 @@ object WorkshopApp extends IOWebApp:
     Widget("Dorothy", "oz", oz),
     Widget("How fast can you overflow the Fibonacci number?", "thomas", fibonacciGame),
     Widget("Cph traffic light", "traffic", traffic),
-    Widget("Echo", "echo", echo)
+    Widget("Echo", "echo", echo),
+    Widget("Exponentials", "exponentials", exponentials),
+    Widget("Fibonacci", "fibonacci", fibonacci),
+    Widget("Lag Test", "lag-test", lagTest)
   )
